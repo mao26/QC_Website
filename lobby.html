@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>Picture Home</title>
+  <style>
+    body {
+      /*background-image : url("public/img/grocery.png");
+      background-repeat : no-repeat;
+      background-attachment : fixed;*/
+      background-color : white;
+      height : 100%;
+      margin : 0;
+      overflow : auto;
+    }
+    #intro {
+      color : white;
+      text-align : center;
+      font-family : cursive;
+      font-size : 20px;
+    }
+    #body-div {
+      background-color: black;
+      /*height : 100vh;*/
+      position : fixed;
+      border : 15px solid white; 
+      left : 0;
+      right : 0;
+      top : 0;
+      bottom : 0;
+      overflow : auto;
+      background-image: url("public/img/dark_grocery.png");
+    }
+    #central-div {
+      position : absolute;
+      top : 33%;
+      left : 34%;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    $( "intro" ).hover(function() {
+      $("#body-div").css("border", "solid 15px red");
+    });
+  </script>
+</head>
+<body>
+  <div id="body-div">
+    <div id="central-div"> 
+      <p id="intro">Make grocery shopping fun!</p>
+      <p id="intro">Become the home chef you've always wanted to be!</p>
+      <a id="intro" href="home.html">Help other's do the same along the way!</p>
+    </div>
+  </div>
+</body>
